@@ -71,7 +71,10 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
         // line 6
         echo " <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-    <img src=\"../assets/img/Logo.png\" alt=\"Logo\" class=\"logo\">
+    <img src=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
+        echo "\" alt=\"Logo\" class=\"logo\">
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
       aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
@@ -107,7 +110,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
     </div>
   </nav>
   <div class=\"container-fluid\">
-    <div class=\"container\">
+    <div class=\"container-nav\">
       <div class=\"p-t-31 p-b-9 form-search\">
         <div class=\"input-group mb-3\">
           <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
@@ -118,8 +121,9 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
         </div>
       </div>
     </div>
+  </div>
 
-    <div style=\"height: 400px\" class=\"container d-flex flex-wrap\">
+    <div style=\"height: 400px\" class=\"container d-flex flex-wrap mt-5\">
       <h1 class=\"mb-3\">MegaCasting</h1>
       <p>
         Parce que le milieu artistique est un monde qui compte beaucoup d'abus, MegaProduction
@@ -174,7 +178,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
     public function getDebugInfo()
     {
-        return array (  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -185,7 +189,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
 {% block body %}
  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-    <img src=\"../assets/img/Logo.png\" alt=\"Logo\" class=\"logo\">
+    <img src=\"{{ asset('img/Logo.png') }}\" alt=\"Logo\" class=\"logo\">
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
       aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
       <span class=\"navbar-toggler-icon\"></span>
@@ -221,7 +225,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
     </div>
   </nav>
   <div class=\"container-fluid\">
-    <div class=\"container\">
+    <div class=\"container-nav\">
       <div class=\"p-t-31 p-b-9 form-search\">
         <div class=\"input-group mb-3\">
           <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
@@ -232,8 +236,9 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
         </div>
       </div>
     </div>
+  </div>
 
-    <div style=\"height: 400px\" class=\"container d-flex flex-wrap\">
+    <div style=\"height: 400px\" class=\"container d-flex flex-wrap mt-5\">
       <h1 class=\"mb-3\">MegaCasting</h1>
       <p>
         Parce que le milieu artistique est un monde qui compte beaucoup d'abus, MegaProduction
@@ -271,6 +276,6 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
     </footer>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\tete-\\Desktop\\MegaCasting\\MegaCasting-Symfo\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\home\\index.html.twig");
     }
 }

@@ -55,11 +55,10 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         // line 7
         $this->displayBlock('head', $context, $blocks);
         // line 8
-        echo "    <link rel=\"icon\" href=\"../assets/img/favicon.ico\">
-    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"
+        echo "    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"
         integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">
     ";
-        // line 11
+        // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 14
         echo "</head>
@@ -105,15 +104,18 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
 
     }
 
-    // line 11
+    // line 10
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 12
-        echo "    
+        // line 11
+        echo "      <link href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/index.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+      <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -164,7 +166,7 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
 
     public function getDebugInfo()
     {
-        return array (  143 => 19,  136 => 18,  124 => 17,  116 => 12,  109 => 11,  96 => 7,  84 => 6,  75 => 31,  72 => 18,  70 => 17,  65 => 14,  63 => 11,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
+        return array (  145 => 19,  138 => 18,  126 => 17,  115 => 11,  108 => 10,  95 => 7,  83 => 6,  74 => 31,  71 => 18,  69 => 17,  64 => 14,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -176,11 +178,11 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
     <meta charset=\"UTF-8\">
     <title>{% block title %}{% endblock %}</title>
     {% block head %} <link rel=\"icon\" href=\"../img/favicon.ico\"> {% endblock %}
-    <link rel=\"icon\" href=\"../assets/img/favicon.ico\">
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"
         integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">
     {% block stylesheets %}
-    
+      <link href=\"{{ asset('css/index.css') }}\" rel=\"stylesheet\">
+      <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
     {% endblock %}
 </head>
 
@@ -201,6 +203,6 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
     {% endblock %}
 </body>
 
-</html>", "base.html.twig", "C:\\Users\\tete-\\Desktop\\MegaCasting\\MegaCasting-Symfo\\templates\\base.html.twig");
+</html>", "base.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\base.html.twig");
     }
 }

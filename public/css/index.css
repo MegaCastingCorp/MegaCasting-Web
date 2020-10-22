@@ -1,0 +1,92 @@
+/* Container pour toutes les pages */
+.container-fluid {
+    background-image: url(../img/font.jpg);
+    background-size: cover;
+    height: 450px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.btn-search {
+    background-color: #23b5b5;
+    width: 50px;
+}
+
+.form-search {
+    width: 600px;
+}
+
+/* CSS Logo barre de navigation */
+.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    width: 100px;
+}
+
+.parasearch {
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Page Contact */
+.contact-title {
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+.contact-title:after{
+    content: "";
+    border-bottom: 5px solid white;
+    width: 4rem;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.contact-bloc {
+    display: flex;
+    align-items: center;
+}
+
+.contact-bloc-1 {
+    margin-right: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.contact-bloc-2 {
+    margin-right: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.contact-bloc-3 {
+    margin-right: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.icon {
+    color: #23b5b5;
+    font-size: 45px;
+}
+
+
+
+/* Page des castings */
+.card {
+    margin-top: 10px;
+}
+
+.btn-postuler {
+    color: #23b5b5;
+}
+
+
