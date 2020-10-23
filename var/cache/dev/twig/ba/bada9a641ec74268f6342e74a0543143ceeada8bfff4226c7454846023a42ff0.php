@@ -116,7 +116,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
           <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
             aria-describedby=\"button-addon2\">
           <div class=\"input-group-append\">
-            <button class=\"btn btn-search\" type=\"button\" id=\"button-addon2\"><i class=\"fas fa-search\"></i></button>
+            <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-info\"><i class=\"fas fa-search\"></i></button>
           </div>
         </div>
       </div>
@@ -231,7 +231,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
           <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
             aria-describedby=\"button-addon2\">
           <div class=\"input-group-append\">
-            <button class=\"btn btn-search\" type=\"button\" id=\"button-addon2\"><i class=\"fas fa-search\"></i></button>
+            <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-info\"><i class=\"fas fa-search\"></i></button>
           </div>
         </div>
       </div>

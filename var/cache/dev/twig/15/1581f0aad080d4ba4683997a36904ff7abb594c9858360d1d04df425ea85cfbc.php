@@ -60,8 +60,11 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
     ";
         // line 10
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 14
-        echo "</head>
+        // line 13
+        echo "    <link href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/index.css"), "html", null, true);
+        echo "\" rel=\"stylesheet\">
+</head>
 
 <body>
     ";
@@ -98,7 +101,9 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
 
-        echo " <link rel=\"icon\" href=\"../img/favicon.ico\"> ";
+        echo " <link rel=\"icon\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/favicon.ico"), "html", null, true);
+        echo "\"> ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -112,10 +117,7 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 11
-        echo "      <link href=\"";
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/index.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
-      <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
+        echo "      <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -164,9 +166,14 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  145 => 19,  138 => 18,  126 => 17,  115 => 11,  108 => 10,  95 => 7,  83 => 6,  74 => 31,  71 => 18,  69 => 17,  64 => 14,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
+        return array (  147 => 19,  140 => 18,  128 => 17,  120 => 11,  113 => 10,  98 => 7,  86 => 6,  77 => 31,  74 => 18,  72 => 17,  64 => 13,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -177,13 +184,13 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
 <head>
     <meta charset=\"UTF-8\">
     <title>{% block title %}{% endblock %}</title>
-    {% block head %} <link rel=\"icon\" href=\"../img/favicon.ico\"> {% endblock %}
+    {% block head %} <link rel=\"icon\" href=\"{{ asset('img/favicon.ico') }}\"> {% endblock %}
     <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css\"
         integrity=\"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z\" crossorigin=\"anonymous\">
     {% block stylesheets %}
-      <link href=\"{{ asset('css/index.css') }}\" rel=\"stylesheet\">
       <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
     {% endblock %}
+    <link href=\"{{ asset('css/index.css') }}\" rel=\"stylesheet\">
 </head>
 
 <body>

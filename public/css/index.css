@@ -12,9 +12,8 @@
     height: 450px;
 }
 
-.btn-search {
+.btn-info {
     background-color: #23b5b5;
-    width: 50px;
 }
 
 .form-search {
@@ -88,5 +87,3 @@
 .btn-postuler {
     color: #23b5b5;
 }
-
-
