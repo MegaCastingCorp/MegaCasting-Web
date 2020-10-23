@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* home/index.html.twig */
-class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b980df0 extends Template
+/* home/contact.html.twig */
+class __TwigTemplate_845ab314fa168171389820424bcd3d708a7daafe4bd41115e024ef982c7b2cf5 extends Template
 {
     private $source;
     private $macros = [];
@@ -40,9 +40,9 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/index.html.twig"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "home/contact.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "home/index.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "home/contact.html.twig", 1);
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -56,23 +56,24 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "MegaCasting - Accueil";
+        echo "MegaCasting - Contact";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 5
+    // line 6
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo " <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-    <img src=\"";
         // line 7
+        echo "
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+    <img src=\"";
+        // line 9
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
         echo "\" alt=\"Logo\" class=\"logo\">
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
@@ -82,17 +83,20 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
     <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
       <ul class=\"navbar-nav mr-auto\">
-        <li class=\"nav-item active\">
-          <a class=\"nav-link\" href=\"#\">Accueil<span class=\"sr-only\">(current)</span></a>
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\">Accueil</a>
         </li>
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"view-castings.php\" id=\"navbarDropdown\" role=\"button\"
+          <a class=\"nav-link dropdown-toggle\" href=\"castings.php\" id=\"navbarDropdown\" role=\"button\"
             data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
             Castings
           </a>
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
             <a class=\"dropdown-item\" href=\"";
-        // line 24
+        // line 26
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("list_casting");
         echo "\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
@@ -101,67 +105,46 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
             <a class=\"dropdown-item\" href=\"#\">Danse</a>
           </div>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"";
-        // line 32
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
-        echo "\">Contact</a>
+        <li class=\"nav-item active\">
+          <a class=\"nav-link\" href=\"#\">Contact<span class=\"sr-only\">(current)</span></a>
         </li>
       </ul>
-      <a href=\"view-login.php\">
-        <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
-          Connexion / Inscription
-        </button>
-      </a>
     </div>
   </nav>
   <div class=\"container-fluid\">
     <div class=\"container-nav\">
       <div class=\"p-t-31 p-b-9 form-search\">
         <div class=\"input-group mb-3\">
-          <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
-            aria-describedby=\"button-addon2\">
-          <div class=\"input-group-append\">
-            <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-search\"><i class=\"fas fa-search\"></i></button>
-          </div>
+          <h1 class=\"contact-title\">Contactez nous</h1>
         </div>
       </div>
     </div>
   </div>
 
-    <div style=\"height: 400px\" class=\"container d-flex flex-wrap mt-5\">
-      <h1 class=\"mb-3\">MegaCasting</h1>
-      <p>
-        Parce que le milieu artistique est un monde qui compte beaucoup d'abus, MegaProduction
-        à créer un site Internet de castings « MegaCasting » qui serait à la fois clair,
-        professionnel et digne de confiance.
-      </p>
-      <p>
-        C'est pour cette raison que MegaCastings
-        s’engage à être au contraire actifs et
-        réactifs en permanence dans leur
-        recherche de castings auprès d’un réseau
-        de partenaires ; c'est également pour cette
-        raison que MegaCastings vérifiera systématiquement les informations des
-        professionnels souhaitant publier des
-        castings en les contactant par téléphone
-        afin de garantir le sérieux des annonces.
-      </p>
-      <p>
-        MegaCastings se veut être un point de rencontre entre professionnels à la recherche de
-        nouveaux talents et artistes désireux de faire leur entrée dans le monde du spectacle.
-        Le business model de MegaCastings repose sur la facturation des diffusions des offres de
-        casting. Plusieurs systèmes de packs existent (pack 10 castings, pack 100 castings, pack
-        illimité et pack sur mesure). Pour information, une offre peut coûter jusqu’à 500€ pour 30
-        jours de diffusions.
-      </p>
+  <!-- Bloc 1 -->
+  <div class=\"container contact-bloc mt-5 mb-5\">
+    <div class=\"contact-bloc-1\">
+      <i class=\"fas fa-map-marked-alt icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">Institut d'Informatique Appliquée</p>
+      <p>5 Boulevard de l'Industrie, Saint-Berthevin</p>
     </div>
-    
+    <div class=\"contact-bloc-2\">
+      <i class=\"fas fa-phone icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">06.19.50.61.13</p>
+      <p>07.82.02.09.17</p>
+    </div>
+    <div class=\"contact-bloc-3\">
+      <i class=\"fas fa-at icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">m.gasseau@iia-laval.fr</p>
+      <p>t.lequipe@iia-laval.fr</p>
+    </div>
+  </div>
+
     <footer>
       <div class=\"card text-center\">
         <div class=\"card-header\">
           <img src=\"";
-        // line 87
+        // line 71
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
         echo "\" alt=\"Logo\" class=\"logo\">
           <h5 class=\"card-title\">©Théo LEQUIPE - Matéo GASSEAU</h5>
@@ -178,7 +161,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
     public function getTemplateName()
     {
-        return "home/index.html.twig";
+        return "home/contact.html.twig";
     }
 
     public function isTraitable()
@@ -188,17 +171,19 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
     public function getDebugInfo()
     {
-        return array (  165 => 87,  107 => 32,  96 => 24,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  148 => 71,  100 => 26,  89 => 18,  77 => 9,  73 => 7,  66 => 6,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}MegaCasting - Accueil{% endblock %}
+{% block title %}MegaCasting - Contact{% endblock %}
+
 
 {% block body %}
- <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
     <img src=\"{{ asset('img/Logo.png') }}\" alt=\"Logo\" class=\"logo\">
     <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
       aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
@@ -207,75 +192,57 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
 
     <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
       <ul class=\"navbar-nav mr-auto\">
-        <li class=\"nav-item active\">
-          <a class=\"nav-link\" href=\"#\">Accueil<span class=\"sr-only\">(current)</span></a>
+        <li class=\"nav-item\">
+          <a class=\"nav-link\" href=\"{{ path(\"home\") }}\">Accueil</a>
         </li>
         <li class=\"nav-item dropdown\">
-          <a class=\"nav-link dropdown-toggle\" href=\"view-castings.php\" id=\"navbarDropdown\" role=\"button\"
+          <a class=\"nav-link dropdown-toggle\" href=\"castings.php\" id=\"navbarDropdown\" role=\"button\"
             data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
             Castings
           </a>
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <a class=\"dropdown-item\" href=\"{{ path('list_casting') }}\">Tout les castings</a>
+            <a class=\"dropdown-item\" href=\"{{ path(\"list_casting\") }}\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
             <a class=\"dropdown-item\" href=\"#\">Théatre</a>
             <a class=\"dropdown-item\" href=\"#\">Danse</a>
           </div>
         </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"{{ path(\"contact\") }}\">Contact</a>
+        <li class=\"nav-item active\">
+          <a class=\"nav-link\" href=\"#\">Contact<span class=\"sr-only\">(current)</span></a>
         </li>
       </ul>
-      <a href=\"view-login.php\">
-        <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
-          Connexion / Inscription
-        </button>
-      </a>
     </div>
   </nav>
   <div class=\"container-fluid\">
     <div class=\"container-nav\">
       <div class=\"p-t-31 p-b-9 form-search\">
         <div class=\"input-group mb-3\">
-          <input type=\"text\" class=\"form-control\" placeholder=\"Rechercher un casting\" aria-label=\"Rechercher un casting\"
-            aria-describedby=\"button-addon2\">
-          <div class=\"input-group-append\">
-            <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-search\"><i class=\"fas fa-search\"></i></button>
-          </div>
+          <h1 class=\"contact-title\">Contactez nous</h1>
         </div>
       </div>
     </div>
   </div>
 
-    <div style=\"height: 400px\" class=\"container d-flex flex-wrap mt-5\">
-      <h1 class=\"mb-3\">MegaCasting</h1>
-      <p>
-        Parce que le milieu artistique est un monde qui compte beaucoup d'abus, MegaProduction
-        à créer un site Internet de castings « MegaCasting » qui serait à la fois clair,
-        professionnel et digne de confiance.
-      </p>
-      <p>
-        C'est pour cette raison que MegaCastings
-        s’engage à être au contraire actifs et
-        réactifs en permanence dans leur
-        recherche de castings auprès d’un réseau
-        de partenaires ; c'est également pour cette
-        raison que MegaCastings vérifiera systématiquement les informations des
-        professionnels souhaitant publier des
-        castings en les contactant par téléphone
-        afin de garantir le sérieux des annonces.
-      </p>
-      <p>
-        MegaCastings se veut être un point de rencontre entre professionnels à la recherche de
-        nouveaux talents et artistes désireux de faire leur entrée dans le monde du spectacle.
-        Le business model de MegaCastings repose sur la facturation des diffusions des offres de
-        casting. Plusieurs systèmes de packs existent (pack 10 castings, pack 100 castings, pack
-        illimité et pack sur mesure). Pour information, une offre peut coûter jusqu’à 500€ pour 30
-        jours de diffusions.
-      </p>
+  <!-- Bloc 1 -->
+  <div class=\"container contact-bloc mt-5 mb-5\">
+    <div class=\"contact-bloc-1\">
+      <i class=\"fas fa-map-marked-alt icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">Institut d'Informatique Appliquée</p>
+      <p>5 Boulevard de l'Industrie, Saint-Berthevin</p>
     </div>
-    
+    <div class=\"contact-bloc-2\">
+      <i class=\"fas fa-phone icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">06.19.50.61.13</p>
+      <p>07.82.02.09.17</p>
+    </div>
+    <div class=\"contact-bloc-3\">
+      <i class=\"fas fa-at icon mb-5\"></i>
+      <p class=\"mb-0 mt-3\">m.gasseau@iia-laval.fr</p>
+      <p>t.lequipe@iia-laval.fr</p>
+    </div>
+  </div>
+
     <footer>
       <div class=\"card text-center\">
         <div class=\"card-header\">
@@ -286,7 +253,6 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
       </div>
     </footer>
 
-{% endblock %}
-", "home/index.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\home\\index.html.twig");
+{% endblock %}", "home/contact.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\home\\contact.html.twig");
     }
 }

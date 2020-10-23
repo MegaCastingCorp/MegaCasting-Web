@@ -70,10 +70,13 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
     ";
         // line 17
         $this->displayBlock('body', $context, $blocks);
-        // line 18
-        echo "    ";
+        // line 20
+        echo "
+    
+    ";
+        // line 22
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 31
+        // line 35
         echo "</body>
 
 </html>";
@@ -131,19 +134,22 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
+        // line 18
+        echo "
+    ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 18
+    // line 22
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 19
+        // line 23
         echo "    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
       integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\">
     </script>
@@ -173,7 +179,7 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
 
     public function getDebugInfo()
     {
-        return array (  147 => 19,  140 => 18,  128 => 17,  120 => 11,  113 => 10,  98 => 7,  86 => 6,  77 => 31,  74 => 18,  72 => 17,  64 => 13,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
+        return array (  153 => 23,  146 => 22,  138 => 18,  131 => 17,  123 => 11,  116 => 10,  101 => 7,  89 => 6,  80 => 35,  78 => 22,  74 => 20,  72 => 17,  64 => 13,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -194,7 +200,11 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
 </head>
 
 <body>
-    {% block body %}{% endblock %}
+    {% block body %}
+
+    {% endblock %}
+
+    
     {% block javascripts %}
     <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
       integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\">

@@ -12,8 +12,21 @@
     height: 450px;
 }
 
-.btn-info {
+/* Bouton Connecxion / Inscription */
+.btn-login {
     background-color: #23b5b5;
+}
+
+/* Bouton de recherche a côté de la barre de recherche */
+.btn-search {
+    background-color: #23b5b5;
+    width: 75px;
+    height: 45px;
+}
+
+.btn-search i {
+    font-size: 12px;
+    text-align: center;
 }
 
 .form-search {
@@ -85,5 +98,6 @@
 }
 
 .btn-postuler {
-    color: #23b5b5;
+    background-color: #23b5b5;
+    color: white;
 }
