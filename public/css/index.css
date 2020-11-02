@@ -101,3 +101,8 @@
     background-color: #23b5b5;
     color: white;
 }
+
+/* UserPage */
+.user-img {
+    width: 100px;
+}

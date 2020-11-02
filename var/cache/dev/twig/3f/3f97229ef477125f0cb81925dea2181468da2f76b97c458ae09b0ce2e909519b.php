@@ -122,8 +122,8 @@ class __TwigTemplate_230831bf9e8c0f21470105296e7eb149100d9cabcdc157b1f0a7afe198c
     <div class=\"container\">
         <img src=\"";
         // line 44
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
-        echo "\" alt=\"User\" class=\"logo\">
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/user.jpg"), "html", null, true);
+        echo "\" alt=\"User\" class=\"user-img\">
         
 
     </div>
@@ -207,7 +207,7 @@ class __TwigTemplate_230831bf9e8c0f21470105296e7eb149100d9cabcdc157b1f0a7afe198c
   </nav>
 
     <div class=\"container\">
-        <img src=\"{{ asset('img/Logo.png') }}\" alt=\"User\" class=\"logo\">
+        <img src=\"{{ asset('img/user.jpg') }}\" alt=\"User\" class=\"user-img\">
         
 
     </div>
