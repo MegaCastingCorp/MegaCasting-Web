@@ -185,6 +185,7 @@
     <service id="App\DataFixtures\AppFixtures" class="App\DataFixtures\AppFixtures" autowire="true" autoconfigure="true">
       <tag name="doctrine.fixture.orm"/>
     </service>
+    <service id="App\Repository\CastingRepository" class="App\Repository\CastingRepository" autowire="true" autoconfigure="true"/>
     <service id="controller_resolver" class="Symfony\Bundle\FrameworkBundle\Controller\ControllerResolver" public="false">
       <tag name="monolog.logger" channel="request"/>
       <argument type="service" id="service_container"/>

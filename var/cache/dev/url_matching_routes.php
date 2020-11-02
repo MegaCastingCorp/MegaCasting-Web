@@ -11,6 +11,7 @@ return [
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/home/casting' => [[['_route' => 'list_casting', '_controller' => 'App\\Controller\\HomeController::castings'], null, null, null, false, false, null]],
         '/home/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\HomeController::contact'], null, null, null, false, false, null]],
+        '/home/userpage' => [[['_route' => 'userpage', '_controller' => 'App\\Controller\\HomeController::userpage'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

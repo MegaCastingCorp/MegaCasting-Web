@@ -7,4 +7,5 @@ return [
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'list_casting' => [[], ['_controller' => 'App\\Controller\\HomeController::castings'], [], [['text', '/home/casting']], [], []],
     'contact' => [[], ['_controller' => 'App\\Controller\\HomeController::contact'], [], [['text', '/home/contact']], [], []],
+    'userpage' => [[], ['_controller' => 'App\\Controller\\HomeController::userpage'], [], [['text', '/home/userpage']], [], []],
 ];
