@@ -63,7 +63,7 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
         // line 13
         echo "    <link href=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("css/index.css"), "html", null, true);
-        echo "\" rel=\"stylesheet\">
+        echo "?=v1\" rel=\"stylesheet\">
 </head>
 
 <body>
@@ -196,7 +196,7 @@ class __TwigTemplate_f856d2eb080a31cc2143491b566ace9c921d6d458555c27dc448caf7b92
     {% block stylesheets %}
       <link rel=\"stylesheet\" href=\"https://bootswatch.com/4/lux/bootstrap.min.css\">
     {% endblock %}
-    <link href=\"{{ asset('css/index.css') }}\" rel=\"stylesheet\">
+    <link href=\"{{ asset('css/index.css') }}?=v1\" rel=\"stylesheet\">
 </head>
 
 <body>

@@ -103,6 +103,40 @@
 }
 
 /* UserPage */
+.user-bloc {
+    display: flex;
+    align-items: center;
+}
+
+.userpage {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .user-img {
-    width: 100px;
+    width: 150px;
+    border-radius: 100%;
+    border: 1px solid black ;
+}
+
+.user-bloc-information {
+    margin-left: 30px;
+}
+
+.name {
+    font-size: 30px;
+}
+
+.user-edit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-editprofil {
+    background-color: #23b5b5;
+    margin-bottom: 5px;
+}
+
+.user-table {
+    background-color: #23b5b5;
 }

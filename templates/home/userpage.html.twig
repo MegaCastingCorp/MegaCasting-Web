@@ -40,11 +40,55 @@
     </div>
   </nav>
 
+  <div class="userpage">
     <div class="container">
-        <img src="{{ asset('img/user.jpg') }}" alt="User" class="user-img">
-        
-
-    </div>
+      <div class="user-edit">
+        <button type="button" type="submit" style="color: white;" class="btn btn-editprofil">
+          Editer le profil
+        </button>
+      </div>
+        <div class="user-bloc">
+          <div>
+            <img src="{{ asset('img/user.jpg') }}" alt="User" class="user-img">
+          </div>
+          <div class="user-bloc-information">
+            <span class="name">Matéo</span> <span class="name">Gasseau</span>
+          </div>
+        </div>
+          <h3 class="mt-5">Vous avez postulé</h3>
+          <table class="table">
+              <thead class="user-table">
+                <tr>
+                  <th scope="col">Casting</th>
+                  <th scope="col">Organisation</th>
+                  <th scope="col">Date de création</th>
+                  <th scope="col">Date postulation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      
+  </div>
     
     <footer>
       <div class="card text-center">

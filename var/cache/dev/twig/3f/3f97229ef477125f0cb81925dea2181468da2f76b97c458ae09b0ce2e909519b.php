@@ -119,20 +119,64 @@ class __TwigTemplate_230831bf9e8c0f21470105296e7eb149100d9cabcdc157b1f0a7afe198c
     </div>
   </nav>
 
+  <div class=\"userpage\">
     <div class=\"container\">
-        <img src=\"";
-        // line 44
+      <div class=\"user-edit\">
+        <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-editprofil\">
+          Editer le profil
+        </button>
+      </div>
+        <div class=\"user-bloc\">
+          <div>
+            <img src=\"";
+        // line 52
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/user.jpg"), "html", null, true);
         echo "\" alt=\"User\" class=\"user-img\">
-        
-
-    </div>
+          </div>
+          <div class=\"user-bloc-information\">
+            <span class=\"name\">Matéo</span> <span class=\"name\">Gasseau</span>
+          </div>
+        </div>
+          <h3 class=\"mt-5\">Vous avez postulé</h3>
+          <table class=\"table\">
+              <thead class=\"user-table\">
+                <tr>
+                  <th scope=\"col\">Casting</th>
+                  <th scope=\"col\">Organisation</th>
+                  <th scope=\"col\">Date de création</th>
+                  <th scope=\"col\">Date postulation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope=\"row\">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope=\"row\">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope=\"row\">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      
+  </div>
     
     <footer>
       <div class=\"card text-center\">
         <div class=\"card-header\">
           <img src=\"";
-        // line 52
+        // line 96
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
         echo "\" alt=\"Logo\" class=\"logo\">
           <h5 class=\"card-title\">©Théo LEQUIPE - Matéo GASSEAU</h5>
@@ -159,7 +203,7 @@ class __TwigTemplate_230831bf9e8c0f21470105296e7eb149100d9cabcdc157b1f0a7afe198c
 
     public function getDebugInfo()
     {
-        return array (  136 => 52,  125 => 44,  110 => 32,  99 => 24,  88 => 16,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  180 => 96,  133 => 52,  110 => 32,  99 => 24,  88 => 16,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -206,11 +250,55 @@ class __TwigTemplate_230831bf9e8c0f21470105296e7eb149100d9cabcdc157b1f0a7afe198c
     </div>
   </nav>
 
+  <div class=\"userpage\">
     <div class=\"container\">
-        <img src=\"{{ asset('img/user.jpg') }}\" alt=\"User\" class=\"user-img\">
-        
-
-    </div>
+      <div class=\"user-edit\">
+        <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-editprofil\">
+          Editer le profil
+        </button>
+      </div>
+        <div class=\"user-bloc\">
+          <div>
+            <img src=\"{{ asset('img/user.jpg') }}\" alt=\"User\" class=\"user-img\">
+          </div>
+          <div class=\"user-bloc-information\">
+            <span class=\"name\">Matéo</span> <span class=\"name\">Gasseau</span>
+          </div>
+        </div>
+          <h3 class=\"mt-5\">Vous avez postulé</h3>
+          <table class=\"table\">
+              <thead class=\"user-table\">
+                <tr>
+                  <th scope=\"col\">Casting</th>
+                  <th scope=\"col\">Organisation</th>
+                  <th scope=\"col\">Date de création</th>
+                  <th scope=\"col\">Date postulation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope=\"row\">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope=\"row\">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope=\"row\">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      
+  </div>
     
     <footer>
       <div class=\"card text-center\">
