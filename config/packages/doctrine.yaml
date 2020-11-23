@@ -1,6 +1,14 @@
 doctrine:
     dbal:
-        url: '%env(resolve:DATABASE_URL)%'
+        connections:
+            default:
+                driver:   pdo_sqlsrv
+                host:     localhost\SQLEXPRESS
+                port:     1433
+                dbname:   MegaCastings
+                user:     sa
+                password: not24get
+                charset:  UTF8 
 
         # IMPORTANT: You MUST configure your server version,
         # either here or in the DATABASE_URL env var (see .env file)
