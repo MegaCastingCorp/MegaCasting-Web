@@ -93,7 +93,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
             <a class=\"dropdown-item\" href=\"";
         // line 24
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("list_casting");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("casting");
         echo "\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
@@ -216,7 +216,7 @@ class __TwigTemplate_8201456fd4f9405340eb0b6d423021f2ab2c1dbe376743fd12639fcb3b9
             Castings
           </a>
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <a class=\"dropdown-item\" href=\"{{ path('list_casting') }}\">Tout les castings</a>
+            <a class=\"dropdown-item\" href=\"{{ path('casting') }}\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
             <a class=\"dropdown-item\" href=\"#\">Théatre</a>

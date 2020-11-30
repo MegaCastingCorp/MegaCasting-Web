@@ -4,8 +4,8 @@
 
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
+    'casting' => [[], ['_controller' => 'App\\Controller\\CastingController::index'], [], [['text', '/casting']], [], []],
+    'contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
-    'list_casting' => [[], ['_controller' => 'App\\Controller\\HomeController::castings'], [], [['text', '/home/casting']], [], []],
-    'contact' => [[], ['_controller' => 'App\\Controller\\HomeController::contact'], [], [['text', '/home/contact']], [], []],
-    'userpage' => [[], ['_controller' => 'App\\Controller\\HomeController::userpage'], [], [['text', '/home/userpage']], [], []],
+    'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
 ];

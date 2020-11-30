@@ -8,10 +8,10 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
+        '/casting' => [[['_route' => 'casting', '_controller' => 'App\\Controller\\CastingController::index'], null, null, null, false, false, null]],
+        '/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
-        '/home/casting' => [[['_route' => 'list_casting', '_controller' => 'App\\Controller\\HomeController::castings'], null, null, null, false, false, null]],
-        '/home/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\HomeController::contact'], null, null, null, false, false, null]],
-        '/home/userpage' => [[['_route' => 'userpage', '_controller' => 'App\\Controller\\HomeController::userpage'], null, null, null, false, false, null]],
+        '/user' => [[['_route' => 'user', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
