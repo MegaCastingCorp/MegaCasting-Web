@@ -11,6 +11,8 @@ return [
         '/casting' => [[['_route' => 'casting', '_controller' => 'App\\Controller\\CastingController::index'], null, null, null, false, false, null]],
         '/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\LoginController::index'], null, null, null, false, false, null]],
+        '/show/casting' => [[['_route' => 'show_casting', '_controller' => 'App\\Controller\\ShowCastingController::index'], null, null, null, false, false, null]],
         '/user' => [[['_route' => 'user', '_controller' => 'App\\Controller\\UserController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList

@@ -68,17 +68,18 @@
 
   <div class="container d-flex justify-content-around flex-wrap mt-3 mb-3">  
 
-    <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{ asset("img/film-production.jpg") }}" alt="Image casting film">
-    <div id="Film" class="card-body">
-      <h5 class="card-title">Casting Film</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-postuler">Postuler
-      </a>
-    </div>
-    </div>
+    {% for casting in castings %}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{{ asset("img/film-production.jpg") }}" alt="Image casting film">
+            <div id="Film" class="card-body">
+                <h5 class="card-title">{{ castings.label }}</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-postuler">Postuler</a>
+            </div>
+        </div>
+    {% endfor %}
 
-    <div class="card" style="width: 18rem;">
+    {# <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="{{ asset("img/studio.jpg") }}" alt="Image casting musique">
     <div class="card-body">
       <h5 class="card-title">Casting Musique</h5>
@@ -96,7 +97,7 @@
       <a href="#" class="btn btn-postuler">Postuler
       </a>
     </div>
-    </div>
+    </div> #}
 
   </div>
 

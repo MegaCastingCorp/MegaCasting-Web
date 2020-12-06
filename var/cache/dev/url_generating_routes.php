@@ -7,5 +7,7 @@ return [
     'casting' => [[], ['_controller' => 'App\\Controller\\CastingController::index'], [], [['text', '/casting']], [], []],
     'contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
+    'login' => [[], ['_controller' => 'App\\Controller\\LoginController::index'], [], [['text', '/login']], [], []],
+    'show_casting' => [[], ['_controller' => 'App\\Controller\\ShowCastingController::index'], [], [['text', '/show/casting']], [], []],
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
 ];
