@@ -1,0 +1,57 @@
+<?php //%255BApp%255CEntity%255COffer%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\Table'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Table')),
+        clone ($p['Doctrine\\ORM\\Mapping\\Index'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Index')),
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone $p['Doctrine\\ORM\\Mapping\\Index'],
+        clone ($p['Doctrine\\ORM\\Mapping\\Entity'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\Entity')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Offer',
+                'IDX_E817A83A2CFDD722',
+                'IDX_E817A83AB0E4728C',
+                'IDX_E817A83AA6921076',
+                'IDX_E817A83AF9D3652B',
+                'IDX_E817A83ABDD5873F',
+            ],
+            'indexes' => [
+                [
+                    $o[1],
+                    $o[2],
+                    $o[3],
+                    $o[4],
+                    $o[5],
+                ],
+            ],
+            'columns' => [
+                1 => [
+                    'IdentifierCategory',
+                ],
+                [
+                    'IdentifierContractType',
+                ],
+                [
+                    'IdentifierFilters',
+                ],
+                [
+                    'IdentifierJob',
+                ],
+                [
+                    'IdentifierProducer',
+                ],
+            ],
+        ],
+    ],
+    [
+        $o[0],
+        $o[6],
+    ],
+    []
+); }];

@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Pack
  *
- * @ORM\Table(name="PACK")
+ * @ORM\Table(name="Pack")
  * @ORM\Entity
  */
 class Pack
@@ -15,23 +15,23 @@ class Pack
     /**
      * @var int
      *
-     * @ORM\Column(name="ID_PACK", type="integer", nullable=false)
+     * @ORM\Column(name="Identifier", type="bigint", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idPack;
+    private $identifier;
 
     /**
      * @var string|null
      *
-     * @ORM\Column(name="NAME_PACK", type="string", length=50, nullable=true)
+     * @ORM\Column(name="Label", type="string", length=150, nullable=true)
      */
-    private $namePack;
+    private $label;
 
     /**
      * @var int|null
      *
-     * @ORM\Column(name="PRICE", type="integer", nullable=true)
+     * @ORM\Column(name="Price", type="bigint", nullable=true)
      */
     private $price;
 

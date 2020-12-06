@@ -93,7 +93,7 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
             <a class=\"dropdown-item\" href=\"";
         // line 24
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("casting");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("offer");
         echo "\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
@@ -108,7 +108,10 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
         echo "\">Contact</a>
         </li>
       </ul>
-      <a href=\"view-login.php\">
+      <a href=\"";
+        // line 35
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
+        echo "\">
         <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
           Connexion / Inscription
         </button>
@@ -188,7 +191,7 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
 
     public function getDebugInfo()
     {
-        return array (  165 => 87,  107 => 32,  96 => 24,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  168 => 87,  113 => 35,  107 => 32,  96 => 24,  76 => 7,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -216,7 +219,7 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
             Castings
           </a>
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <a class=\"dropdown-item\" href=\"{{ path('casting') }}\">Tout les castings</a>
+            <a class=\"dropdown-item\" href=\"{{ path('offer') }}\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
             <a class=\"dropdown-item\" href=\"#\">Théatre</a>
@@ -227,7 +230,7 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
           <a class=\"nav-link\" href=\"{{ path(\"contact\") }}\">Contact</a>
         </li>
       </ul>
-      <a href=\"view-login.php\">
+      <a href=\"{{ path(\"login\")}}\">
         <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
           Connexion / Inscription
         </button>
@@ -287,6 +290,6 @@ class __TwigTemplate_e301d6bc88419fe3c10d4cb24c2e25f7839d8e28d5da1ca66b4ddc0fe97
     </footer>
 
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\tete-\\Desktop\\MegaCasting\\MegaCasting-Symfo\\templates\\home\\index.html.twig");
     }
 }

@@ -4,10 +4,10 @@
 
 return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
-    'casting' => [[], ['_controller' => 'App\\Controller\\CastingController::index'], [], [['text', '/casting']], [], []],
     'contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\LoginController::index'], [], [['text', '/login']], [], []],
-    'show_casting' => [[], ['_controller' => 'App\\Controller\\ShowCastingController::index'], [], [['text', '/show/casting']], [], []],
+    'offer' => [[], ['_controller' => 'App\\Controller\\OfferController::index'], [], [['text', '/offer']], [], []],
+    'showoffer' => [['id'], ['_controller' => 'App\\Controller\\OfferController::showoffer'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/offer']], [], []],
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
 ];

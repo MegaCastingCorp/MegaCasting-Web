@@ -97,7 +97,7 @@ class __TwigTemplate_7fcf5a39042998995b8ba696a4a2d0b3cdfd1333a13253804ba694da17a
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
             <a class=\"dropdown-item\" href=\"";
         // line 26
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("casting");
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("offer");
         echo "\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
@@ -201,7 +201,7 @@ class __TwigTemplate_7fcf5a39042998995b8ba696a4a2d0b3cdfd1333a13253804ba694da17a
             Castings
           </a>
           <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">
-            <a class=\"dropdown-item\" href=\"{{ path(\"casting\") }}\">Tout les castings</a>
+            <a class=\"dropdown-item\" href=\"{{ path(\"offer\") }}\">Tout les castings</a>
             <a class=\"dropdown-item\" href=\"#Film\">Cinema</a>
             <a class=\"dropdown-item\" href=\"#\">Musique</a>
             <a class=\"dropdown-item\" href=\"#\">Théatre</a>
@@ -253,6 +253,6 @@ class __TwigTemplate_7fcf5a39042998995b8ba696a4a2d0b3cdfd1333a13253804ba694da17a
       </div>
     </footer>
 
-{% endblock %}", "contact/index.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\contact\\index.html.twig");
+{% endblock %}", "contact/index.html.twig", "C:\\Users\\tete-\\Desktop\\MegaCasting\\MegaCasting-Symfo\\templates\\contact\\index.html.twig");
     }
 }

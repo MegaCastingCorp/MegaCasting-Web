@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Employee
  *
- * @ORM\Table(name="EMPLOYEE", indexes={@ORM\Index(name="IDX_9BACE9ED7365E708", columns={"ID_CIVILITE"})})
+ * @ORM\Table(name="Employee", indexes={@ORM\Index(name="IDX_A4E917F799AE34AF", columns={"IdentifierGender"})})
  * @ORM\Entity
  */
 class Employee
@@ -15,56 +15,56 @@ class Employee
     /**
      * @var int
      *
-     * @ORM\Column(name="ID_EMPLOYEE", type="integer", nullable=false)
+     * @ORM\Column(name="Identifier", type="bigint", nullable=false)
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idEmployee;
+    private $identifier;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="Firstname", type="string", length=150, nullable=true)
+     */
+    private $firstname;
+
+    /**
+     * @var string|null
+     *
+     * @ORM\Column(name="Lastname", type="string", length=150, nullable=true)
+     */
+    private $lastname;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="EMPLOYEE_FIRSTNAME", type="string", length=100, nullable=false)
+     * @ORM\Column(name="Username", type="string", length=150, nullable=false)
      */
-    private $employeeFirstname;
+    private $username;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="EMPLOYEE_LASTNAME", type="string", length=100, nullable=false)
+     * @ORM\Column(name="Password", type="string", length=200, nullable=false)
      */
-    private $employeeLastname;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="EMPLOYEE_USERNAME", type="string", length=150, nullable=false)
-     */
-    private $employeeUsername;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="EMPLOYEE_PASSWORD", type="string", length=175, nullable=false)
-     */
-    private $employeePassword;
+    private $password;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="EST_ADMIN", type="boolean", nullable=false)
+     * @ORM\Column(name="Admin", type="boolean", nullable=false)
      */
-    private $estAdmin;
+    private $admin;
 
     /**
-     * @var \Civilite
+     * @var \Gender
      *
-     * @ORM\ManyToOne(targetEntity="Civilite")
+     * @ORM\ManyToOne(targetEntity="Gender")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="ID_CIVILITE", referencedColumnName="ID_CIVILITE")
+     *   @ORM\JoinColumn(name="IdentifierGender", referencedColumnName="Identifier")
      * })
      */
-    private $idCivilite;
+    private $identifiergender;
 
 
 }
