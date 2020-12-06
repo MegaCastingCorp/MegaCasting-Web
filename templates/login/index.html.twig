@@ -2,27 +2,77 @@
 
 {% block title %}MegaCasting - Connexion{% endblock %}
 
+    {% block stylesheets %}
+	<link rel="icon" type="image/png" href="{{ asset('img/favicon.ico') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/animate/animate.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/css-hamburgers/hamburgers.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('vendor/select2/select2.min.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    {% endblock %}
+
+
 {% block body %}
     
-    <div class="container login">
-        <div>
-            <h2>Connectez-vous</h2>
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Mot de passe</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Restez connectez</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Connexion </button>
-        </form>
-    </div>
+  <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic">
+					<img src="{{ asset('img/Logo.png') }}" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Connexion client
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Email valide requis">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Mot de passe est requis">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Connexion
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<a class="txt2" href="#">
+							Nom d'utilisateur / Mot de passe ?
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							Pas encore de compte ?
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    {% block script %}
+	<script src="{{ asset('vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+	<script src="{{ asset('vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ asset('vendor/select2/select2.min.js') }}"></script>
+	</script>
+	<script src="{{ asset('js/main.js') }}"></script>
+    {% endblock %}
 
 {% endblock %}

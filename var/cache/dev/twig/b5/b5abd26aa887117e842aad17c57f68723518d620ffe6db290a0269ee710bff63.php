@@ -108,7 +108,10 @@ class __TwigTemplate_67867ca03ebaa18ec14050a021aede4c1e31259e6c74f421eb7ff7e3c69
         echo "\">Contact</a>
         </li>
       </ul>
-        <a href=\"view-login.php\">
+        <a href=\"";
+        // line 36
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
+        echo "\">
         <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
           Connexion / Inscription
         </button>
@@ -222,7 +225,7 @@ class __TwigTemplate_67867ca03ebaa18ec14050a021aede4c1e31259e6c74f421eb7ff7e3c69
 
     public function getDebugInfo()
     {
-        return array (  199 => 111,  191 => 105,  188 => 85,  176 => 79,  172 => 78,  168 => 77,  164 => 76,  160 => 75,  155 => 73,  152 => 72,  148 => 71,  107 => 33,  88 => 17,  76 => 8,  73 => 7,  66 => 6,  53 => 3,  36 => 1,);
+        return array (  202 => 111,  194 => 105,  191 => 85,  179 => 79,  175 => 78,  171 => 77,  167 => 76,  163 => 75,  158 => 73,  155 => 72,  151 => 71,  113 => 36,  107 => 33,  88 => 17,  76 => 8,  73 => 7,  66 => 6,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -262,7 +265,7 @@ class __TwigTemplate_67867ca03ebaa18ec14050a021aede4c1e31259e6c74f421eb7ff7e3c69
           <a class=\"nav-link\" href=\"{{ path(\"contact\") }}\">Contact</a>
         </li>
       </ul>
-        <a href=\"view-login.php\">
+        <a href=\"{{ path(\"login\")}}\">
         <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
           Connexion / Inscription
         </button>
