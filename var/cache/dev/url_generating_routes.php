@@ -9,5 +9,6 @@ return [
     'login' => [[], ['_controller' => 'App\\Controller\\LoginController::index'], [], [['text', '/login']], [], []],
     'offer' => [[], ['_controller' => 'App\\Controller\\OfferController::index'], [], [['text', '/offer']], [], []],
     'showoffer' => [['id'], ['_controller' => 'App\\Controller\\OfferController::showoffer'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/offer']], [], []],
+    'signin' => [[], ['_controller' => 'App\\Controller\\SigninController::index'], [], [['text', '/signin']], [], []],
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
 ];

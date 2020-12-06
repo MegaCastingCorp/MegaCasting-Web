@@ -162,7 +162,10 @@ class __TwigTemplate_589bec8c9931fc5f55693dd17dbb9e395fa7de62e364b9598ef0ea213ff
 \t\t\t\t\t</div>
 
 \t\t\t\t\t<div class=\"text-center p-t-136\">
-\t\t\t\t\t\t<a class=\"txt2\" href=\"#\">
+\t\t\t\t\t\t<a class=\"txt2\" href=\"";
+        // line 60
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("signin");
+        echo "\">
 \t\t\t\t\t\t\tPas encore de compte ?
 \t\t\t\t\t\t\t<i class=\"fa fa-long-arrow-right m-l-5\" aria-hidden=\"true\"></i>
 \t\t\t\t\t\t</a>
@@ -225,7 +228,7 @@ class __TwigTemplate_589bec8c9931fc5f55693dd17dbb9e395fa7de62e364b9598ef0ea213ff
 
     public function getDebugInfo()
     {
-        return array (  208 => 75,  203 => 73,  199 => 72,  194 => 71,  187 => 70,  179 => 77,  177 => 70,  127 => 23,  120 => 18,  113 => 17,  104 => 13,  100 => 12,  96 => 11,  92 => 10,  88 => 9,  84 => 8,  80 => 7,  75 => 6,  68 => 5,  55 => 3,  38 => 1,);
+        return array (  211 => 75,  206 => 73,  202 => 72,  197 => 71,  190 => 70,  182 => 77,  180 => 70,  167 => 60,  127 => 23,  120 => 18,  113 => 17,  104 => 13,  100 => 12,  96 => 11,  92 => 10,  88 => 9,  84 => 8,  80 => 7,  75 => 6,  68 => 5,  55 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -289,7 +292,7 @@ class __TwigTemplate_589bec8c9931fc5f55693dd17dbb9e395fa7de62e364b9598ef0ea213ff
 \t\t\t\t\t</div>
 
 \t\t\t\t\t<div class=\"text-center p-t-136\">
-\t\t\t\t\t\t<a class=\"txt2\" href=\"#\">
+\t\t\t\t\t\t<a class=\"txt2\" href=\"{{ path(\"signin\")}}\">
 \t\t\t\t\t\t\tPas encore de compte ?
 \t\t\t\t\t\t\t<i class=\"fa fa-long-arrow-right m-l-5\" aria-hidden=\"true\"></i>
 \t\t\t\t\t\t</a>
