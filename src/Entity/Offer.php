@@ -14,6 +14,13 @@ class Offer
 {
 
     /**
+     * @ORM\Id
+     * @ORM\GeneratedValue
+     * @ORM\Column(type="integer")
+     */
+    private $identifier;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="Name", type="string", length=50, nullable=false)
@@ -107,7 +114,7 @@ class Offer
      *   @ORM\JoinColumn(name="Identifier", referencedColumnName="IdentifierOffer")
      * })
      */
-    public $identifier;
+    //public $identifier;
 
     /**
      * @var \Category
@@ -159,5 +166,8 @@ class Offer
      */
     private $identifierproducer;
 
-
+    public function getIdentifier(): ?int
+    {
+        return $this->identifier;
+    }
 }

@@ -24,14 +24,17 @@ class OfferController extends AbstractController
     }
 
     /**
-     * @Route("/offer/{id}", name="showoffer")
+     * @Route("/offer/{identifier}", name="showoffer")
+     * @param $identifier
      */
-    public function showoffer($id){
-        $repo = $this -> getDoctrine() -> getRepository(Offer::class);
-        $offers = $repo -> find($id);
+    public function showoffer($identifier){
+
+        $repo = $this -> getDoctrine()->getRepository(Offer::class);
+        $offer = $repo -> find($identifier);
 
         return $this->render('offer/showoffer.html.twig', [
-            'offers' => $offers
+            'controller_name' => 'OfferController',
+            'offer' => $offer
         ]);
 
     }

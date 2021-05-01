@@ -6,10 +6,9 @@ return [
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], []],
     'contact' => [[], ['_controller' => 'App\\Controller\\ContactController::index'], [], [['text', '/contact']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
-    'phpinfo' => [[], ['_controller' => 'App\\Controller\\HomeController::phpinfo'], [], [['text', '/phpinfo']], [], []],
     'login' => [[], ['_controller' => 'App\\Controller\\LoginController::index'], [], [['text', '/login']], [], []],
     'offer' => [[], ['_controller' => 'App\\Controller\\OfferController::index'], [], [['text', '/offer']], [], []],
-    'showoffer' => [['id'], ['_controller' => 'App\\Controller\\OfferController::showoffer'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/offer']], [], []],
+    'showoffer' => [['identifier'], ['_controller' => 'App\\Controller\\OfferController::showoffer'], [], [['variable', '/', '[^/]++', 'identifier', true], ['text', '/offer']], [], []],
     'signin' => [[], ['_controller' => 'App\\Controller\\SigninController::index'], [], [['text', '/signin']], [], []],
     'user' => [[], ['_controller' => 'App\\Controller\\UserController::index'], [], [['text', '/user']], [], []],
 ];
