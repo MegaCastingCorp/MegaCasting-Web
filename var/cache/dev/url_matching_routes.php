@@ -10,6 +10,7 @@ return [
     [ // $staticRoutes
         '/contact' => [[['_route' => 'contact', '_controller' => 'App\\Controller\\ContactController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/phpinfo' => [[['_route' => 'phpinfo', '_controller' => 'App\\Controller\\HomeController::phpinfo'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'login', '_controller' => 'App\\Controller\\LoginController::index'], null, null, null, false, false, null]],
         '/offer' => [[['_route' => 'offer', '_controller' => 'App\\Controller\\OfferController::index'], null, null, null, false, false, null]],
         '/signin' => [[['_route' => 'signin', '_controller' => 'App\\Controller\\SigninController::index'], null, null, null, false, false, null]],

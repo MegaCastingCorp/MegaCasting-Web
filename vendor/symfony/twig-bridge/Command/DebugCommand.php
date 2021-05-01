@@ -60,7 +60,7 @@ class DebugCommand extends Command
                 new InputOption('filter', null, InputOption::VALUE_REQUIRED, 'Show details for all entries matching this filter'),
                 new InputOption('format', null, InputOption::VALUE_REQUIRED, 'The output format (text or json)', 'text'),
             ])
-            ->setDescription('Shows a list of twig functions, filters, globals and tests')
+            ->setDescription('Show a list of twig functions, filters, globals and tests')
             ->setHelp(<<<'EOF'
 The <info>%command.name%</info> command outputs a list of twig functions,
 filters, globals and tests.
@@ -147,7 +147,7 @@ EOF
                     $shortnames[] = str_replace('\\', '/', $file->getRelativePathname());
                 }
 
-                list($namespace, $shortname) = $this->parseTemplateName($name);
+                [$namespace, $shortname] = $this->parseTemplateName($name);
                 $alternatives = $this->findAlternatives($shortname, $shortnames);
                 if (FilesystemLoader::MAIN_NAMESPACE !== $namespace) {
                     $alternatives = array_map(function ($shortname) use ($namespace) {
@@ -452,7 +452,7 @@ EOF
 
     private function findTemplateFiles(string $name): array
     {
-        list($namespace, $shortname) = $this->parseTemplateName($name);
+        [$namespace, $shortname] = $this->parseTemplateName($name);
 
         $files = [];
         foreach ($this->getFilesystemLoaders() as $loader) {

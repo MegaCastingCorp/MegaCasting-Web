@@ -15,11 +15,11 @@ class OfferController extends AbstractController
     public function index()
     {
         $repo = $this -> getDoctrine() -> getRepository(Offer::class);
-        //$offers = $repo -> findAll();
+        $offers = $repo -> findAll();
 
         return $this->render('offer/index.html.twig', [
             'controller_name' => 'OfferController',
-            //'offers' => $offers
+            'offers' => $offers
         ]);
     }
 

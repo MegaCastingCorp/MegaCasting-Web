@@ -64,16 +64,98 @@ class __TwigTemplate_8cd023543bf66bf8a89807f97bd7b78d297e3e00c6688cc8316fda02f65
         echo "</head>
 
 <body>
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        <img src=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
+        echo "\" alt=\"Logo\" class=\"logo\">
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
+                aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
+
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+            <ul class=\"navbar-nav mr-auto\">
+                <li class=\"";
+        // line 26
+        if ((0 === twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 26, $this->source); })()), "HomeController"))) {
+            echo "nav-item active";
+        }
+        echo " ";
+        if ((0 !== twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 26, $this->source); })()), "HomeController"))) {
+            echo "nav-item";
+        }
+        echo "\">
+                    <a class=\"nav-link\" href=\"";
+        // line 27
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\">Accueil</a>
+                </li>
+                <li class=\"";
+        // line 29
+        if ((0 === twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 29, $this->source); })()), "OfferController"))) {
+            echo "nav-item active";
+        }
+        echo " ";
+        if ((0 !== twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 29, $this->source); })()), "OfferController"))) {
+            echo "nav-item";
+        }
+        echo "\">
+                        <a class=\"nav-link\" href=\"";
+        // line 30
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("offer");
+        echo "\">Castings</a>
+                </li>
+                <li class=\"";
+        // line 32
+        if ((0 === twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 32, $this->source); })()), "ContactController"))) {
+            echo "nav-item active";
+        }
+        echo " ";
+        if ((0 !== twig_compare((isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 32, $this->source); })()), "ContactController"))) {
+            echo "nav-item";
+        }
+        echo "\">
+                    <a class=\"nav-link\" href=\"";
+        // line 33
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("contact");
+        echo "\">Contact</a>
+                </li>
+            </ul>
+            <a href=\"";
+        // line 36
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
+        echo "\">
+                <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
+                    Connexion / Inscription
+                </button>
+            </a>
+        </div>
+    </nav>
+
     ";
-        // line 17
+        // line 44
         $this->displayBlock('body', $context, $blocks);
-        // line 20
+        // line 45
         echo "
+    <footer>
+        <div class=\"card text-center\">
+            <div class=\"card-header\">
+                <img src=\"";
+        // line 49
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Logo.png"), "html", null, true);
+        echo "\" alt=\"Logo\" class=\"logo\">
+                <h5 class=\"card-title\">©Théo LEQUIPE - Matéo GASSEAU</h5>
+                <p class=\"card-text\">MegaCasting est un outil pour le projet de BTS SIO Option SLAM.</p>
+            </div>
+        </div>
+    </footer>
+
     
     ";
-        // line 22
+        // line 57
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 35
+        // line 70
         echo "</body>
 
 </html>";
@@ -128,29 +210,26 @@ class __TwigTemplate_8cd023543bf66bf8a89807f97bd7b78d297e3e00c6688cc8316fda02f65
 
     }
 
-    // line 17
+    // line 44
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 18
-        echo "
-    ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
     }
 
-    // line 22
+    // line 57
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 23
+        // line 58
         echo "    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
       integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\">
     </script>
@@ -173,9 +252,14 @@ class __TwigTemplate_8cd023543bf66bf8a89807f97bd7b78d297e3e00c6688cc8316fda02f65
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  154 => 23,  147 => 22,  139 => 18,  132 => 17,  123 => 12,  120 => 11,  113 => 10,  98 => 7,  86 => 6,  77 => 35,  75 => 22,  71 => 20,  69 => 17,  64 => 14,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
+        return array (  233 => 58,  226 => 57,  214 => 44,  205 => 12,  202 => 11,  195 => 10,  180 => 7,  168 => 6,  159 => 70,  157 => 57,  146 => 49,  140 => 45,  138 => 44,  127 => 36,  121 => 33,  111 => 32,  106 => 30,  96 => 29,  91 => 27,  81 => 26,  70 => 18,  64 => 14,  62 => 10,  58 => 8,  56 => 7,  52 => 6,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -196,9 +280,44 @@ class __TwigTemplate_8cd023543bf66bf8a89807f97bd7b78d297e3e00c6688cc8316fda02f65
 </head>
 
 <body>
-    {% block body %}
+    <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+        <img src=\"{{ asset('img/Logo.png') }}\" alt=\"Logo\" class=\"logo\">
+        <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\"
+                aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <span class=\"navbar-toggler-icon\"></span>
+        </button>
 
-    {% endblock %}
+        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+            <ul class=\"navbar-nav mr-auto\">
+                <li class=\"{% if controller_name == 'HomeController' %}nav-item active{% endif %} {% if controller_name != 'HomeController' %}nav-item{% endif %}\">
+                    <a class=\"nav-link\" href=\"{{ path('home') }}\">Accueil</a>
+                </li>
+                <li class=\"{% if controller_name == 'OfferController' %}nav-item active{% endif %} {% if controller_name != 'OfferController' %}nav-item{% endif %}\">
+                        <a class=\"nav-link\" href=\"{{ path('offer') }}\">Castings</a>
+                </li>
+                <li class=\"{% if controller_name == 'ContactController' %}nav-item active{% endif %} {% if controller_name != 'ContactController' %}nav-item{% endif %}\">
+                    <a class=\"nav-link\" href=\"{{ path('contact') }}\">Contact</a>
+                </li>
+            </ul>
+            <a href=\"{{ path(\"login\")}}\">
+                <button type=\"button\" type=\"submit\" style=\"color: white;\" class=\"btn btn-login\">
+                    Connexion / Inscription
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+
+    <footer>
+        <div class=\"card text-center\">
+            <div class=\"card-header\">
+                <img src=\"{{ asset('img/Logo.png') }}\" alt=\"Logo\" class=\"logo\">
+                <h5 class=\"card-title\">©Théo LEQUIPE - Matéo GASSEAU</h5>
+                <p class=\"card-text\">MegaCasting est un outil pour le projet de BTS SIO Option SLAM.</p>
+            </div>
+        </div>
+    </footer>
 
     
     {% block javascripts %}
@@ -216,6 +335,6 @@ class __TwigTemplate_8cd023543bf66bf8a89807f97bd7b78d297e3e00c6688cc8316fda02f65
     {% endblock %}
 </body>
 
-</html>", "base.html.twig", "C:\\Users\\Matéo\\Documents\\MegaCasting-Web\\templates\\base.html.twig");
+</html>", "base.html.twig", "E:\\GitHub\\MegaCasting-Web\\templates\\base.html.twig");
     }
 }

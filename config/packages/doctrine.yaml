@@ -3,11 +3,11 @@ doctrine:
         connections:
             default:
                 driver:   pdo_sqlsrv
-                host:     localhost\SQLEXPRESS
+                host:     172.16.2.4\MSSQLSERVER
                 port:     1433
                 dbname:   MegaCastings
-                user:     sa
-                password: not24get
+                user:     megacasting
+                password: Not24get
                 charset:  UTF8 
 
         # IMPORTANT: You MUST configure your server version,

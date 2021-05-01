@@ -34,9 +34,8 @@
               </div>
               <div class="col-8">
                   Les annonces
-                  {#
                   {% for offer in offers %}
-                <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src=" {{ asset("img/film-production.jpg") }}" alt="Image casting film">
                     <div id="Film" class="card-body">
                         <h5 class="card-title">{{ offer.name }}</h5>
@@ -49,7 +48,6 @@
                     </div>
                 </div>
             {% endfor %}
-                  #}
               </div>
           </div>
       </div>
