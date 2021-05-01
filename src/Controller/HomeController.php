@@ -19,13 +19,4 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
-
-    /**
-     * @Route("/phpinfo", name="phpinfo")
-     */
-    public function phpinfo()
-    {
-
-        return phpinfo();
-    }
 }
