@@ -41,7 +41,7 @@ class Users
      *
      * @ORM\Column(name="Username", type="string", length=50, nullable=false)
      */
-    private $username;
+    public $username;
 
     /**
      * @var string

@@ -21,7 +21,9 @@ class RegistrationType extends AbstractType
             ->add('lastname', TextType::class, [
                 'label' => 'Nom de famille'
             ])
-            //->add('username')
+            ->add('username', TextType::class, [
+                'label' => 'Username'
+            ])
             ->add('password', TextType::class, [
                 'label' => 'Mot de passe'
             ])
