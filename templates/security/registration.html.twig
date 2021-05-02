@@ -1,0 +1,67 @@
+{% extends 'loginbase.html.twig' %}
+
+{% block title %}MegaCasting - Inscription{% endblock %}
+
+{% block stylesheets %}
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {% for flashError in app.flashes('verify_email_error') %}
+        <div class="notification is-danger" role="alert">{{ flashError }}</div>
+    {% endfor %}
+
+    <div class="min-h-screen flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-lg w-full space-y-8">
+            <div>
+                <img class="mx-auto h-20 w-auto" src="{{ asset('/img/Logo.png') }}" alt="logo">
+                <h2 class="mt-4 text-center text-3xl font-extrabold text-black">
+                    Créer votre compte MegaCasting
+                </h2>
+            </div>
+            <div class="mt-8 space-y-6">
+                {{ form_start(form) }}
+                <input type="hidden" name="remember" value="true">
+                <div class="rounded-md shadow-sm -space-y-px text-black">
+                    <div class="grid grid-cols-6 gap-6">
+
+                    <div class="col-span-6">
+                        <div> {{ form_row(form.firstname, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}}) }}</div>
+                    </div>
+
+                    <div class="col-span-3">
+                        <div> {{ form_row(form.lastname, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}}) }}</div>
+                    </div>
+
+                    <div class="col-span-3">
+                        <div> {{ form_row(form.email, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}}) }}</div>
+                    </div>
+
+                    <div class="col-span-3">
+                        <div> {{ form_row(form.password, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}})  }}</div>
+                    </div>
+
+                    <div class="col-span-3">
+                        {{ form_row(form.birthdate, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}})  }}
+                    </div>
+
+                    <div class="col-span-6">
+                        {{ form_row(form.identifiergender, {'attr': {'class': 'text-black appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 rounded-md focus:outline-none focus:ring-blue-700 focus:border-blue-700 focus:z-10 sm:text-sm'}})  }}
+                    </div>
+
+                    <div class="col-span-6">
+                        <button class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-text-blue">
+                            {{ button|default('S\'inscrire') }}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {{ form_rest(form) }}
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

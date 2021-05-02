@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Users
@@ -26,14 +27,14 @@ class Users
      *
      * @ORM\Column(name="Firstname", type="string", length=150, nullable=true)
      */
-    private $firstname;
+    public $firstname;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Lastname", type="string", length=150, nullable=true)
      */
-    private $lastname;
+    public $lastname;
 
     /**
      * @var string
@@ -47,28 +48,28 @@ class Users
      *
      * @ORM\Column(name="Password", type="string", length=50, nullable=false)
      */
-    private $password;
+    public $password;
 
     /**
      * @var string
      *
      * @ORM\Column(name="Email", type="string", length=200, nullable=false)
      */
-    private $email;
+    public $email;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="BirthDate", type="date", nullable=false)
      */
-    private $birthdate;
+    public $birthdate;
 
     /**
      * @var string|null
      *
      * @ORM\Column(name="Avatar", type="string", length=2000, nullable=true)
      */
-    private $avatar;
+    public $avatar;
 
     /**
      * @var \Gender
@@ -78,7 +79,7 @@ class Users
      *   @ORM\JoinColumn(name="IdentifierGender", referencedColumnName="Identifier")
      * })
      */
-    private $identifiergender;
+    public $identifiergender;
 
 
 }

@@ -28,5 +28,9 @@ class Gender
      */
     private $label;
 
+    public function __toString()
+    {
+        return $this->identifier;
+    }
 
 }
