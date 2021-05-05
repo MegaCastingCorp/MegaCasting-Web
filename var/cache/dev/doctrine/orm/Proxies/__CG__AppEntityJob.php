@@ -176,4 +176,63 @@ class Job extends \App\Entity\Job implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifier(): ?string
+    {
+        if ($this->__isInitialized__ === false) {
+            return  parent::getIdentifier();
+        }
+
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifier', []);
+
+        return parent::getIdentifier();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getName(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+
+        return parent::getName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setName(string $name): \App\Entity\Job
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
+
+        return parent::setName($name);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifierjobtype(): ?\App\Entity\Jobtype
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifierjobtype', []);
+
+        return parent::getIdentifierjobtype();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setIdentifierjobtype(?\App\Entity\Jobtype $identifierjobtype): \App\Entity\Job
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdentifierjobtype', [$identifierjobtype]);
+
+        return parent::setIdentifierjobtype($identifierjobtype);
+    }
+
 }

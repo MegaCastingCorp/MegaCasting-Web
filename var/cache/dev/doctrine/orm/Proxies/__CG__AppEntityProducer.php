@@ -176,4 +176,129 @@ class Producer extends \App\Entity\Producer implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifier(): ?string
+    {
+        if ($this->__isInitialized__ === false) {
+            return  parent::getIdentifier();
+        }
+
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifier', []);
+
+        return parent::getIdentifier();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getName(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+
+        return parent::getName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setName(?string $name): \App\Entity\Producer
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
+
+        return parent::setName($name);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getUsername(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsername', []);
+
+        return parent::getUsername();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUsername(?string $username): \App\Entity\Producer
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUsername', [$username]);
+
+        return parent::setUsername($username);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getPassword(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', []);
+
+        return parent::getPassword();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setPassword(?string $password): \App\Entity\Producer
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPassword', [$password]);
+
+        return parent::setPassword($password);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getUrl(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUrl', []);
+
+        return parent::getUrl();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setUrl(?string $url): \App\Entity\Producer
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUrl', [$url]);
+
+        return parent::setUrl($url);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifierpack(): ?\App\Entity\Pack
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifierpack', []);
+
+        return parent::getIdentifierpack();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setIdentifierpack(?\App\Entity\Pack $identifierpack): \App\Entity\Producer
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setIdentifierpack', [$identifierpack]);
+
+        return parent::setIdentifierpack($identifierpack);
+    }
+
 }

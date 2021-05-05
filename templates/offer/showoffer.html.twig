@@ -7,7 +7,41 @@
     <div class="container my-4">
         <h1> {{ offer.name }} </h1>
 
-        <img class="card-img-top" src=" {{ asset("img/film-production.jpg") }}" alt="Image casting film">
+        <div class="row mt-3">
+            <div class="col">
+                <img class="card-img-top" src=" {{ asset("img/film-production.jpg") }}" alt="Image casting film">
+            </div>
+
+            <div class="col">
+
+            <h3>Information sur l'annonce</h3>
+
+                <p>Description de l'offre:</p>
+                <p>{{ offer.jobdescription }}</p>
+                <br />
+                <p>Description du profil rechercher:</p>
+                <p>{{ offer.profildescription }}</p>
+                <br />
+                <p>Nombre de personnes rechercher:</p>
+                <p>{{ offer.postcount }}</p>
+            </div>
+
+        </div>
+
+        <div class="row mt-3">
+            <p>Date de début:</p>
+            <p class="ml-1">{{ offer.startcontractdate|date("d/m/Y") }}</p>
+
+            <p class="ml-5">Date de début:</p>
+            <p class="ml-1">{{ offer.publishdatetime|date("d/m/Y") }}</p>
+        </div>
+
+        <h3>Information sur l'annonceur</h3>
+
+        
+
+        <a href="{{ path('showoffer', {identifier: offer.identifier}) }}" class="btn btn-postuler">Postuler</a>
+
     </div>
 
 {% endblock %}

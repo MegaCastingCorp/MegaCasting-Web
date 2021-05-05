@@ -176,4 +176,41 @@ class Contracttype extends \App\Entity\Contracttype implements \Doctrine\ORM\Pro
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifier(): ?string
+    {
+        if ($this->__isInitialized__ === false) {
+            return  parent::getIdentifier();
+        }
+
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifier', []);
+
+        return parent::getIdentifier();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getName(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getName', []);
+
+        return parent::getName();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setName(?string $name): \App\Entity\Contracttype
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setName', [$name]);
+
+        return parent::setName($name);
+    }
+
 }

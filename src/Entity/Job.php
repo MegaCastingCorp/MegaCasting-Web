@@ -38,5 +38,34 @@ class Job
      */
     private $identifierjobtype;
 
+    public function getIdentifier(): ?string
+    {
+        return $this->identifier;
+    }
+
+    public function getName(): ?string
+    {
+        return $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    public function getIdentifierjobtype(): ?Jobtype
+    {
+        return $this->identifierjobtype;
+    }
+
+    public function setIdentifierjobtype(?Jobtype $identifierjobtype): self
+    {
+        $this->identifierjobtype = $identifierjobtype;
+
+        return $this;
+    }
+
 
 }

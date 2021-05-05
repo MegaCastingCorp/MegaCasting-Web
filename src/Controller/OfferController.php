@@ -32,6 +32,8 @@ class OfferController extends AbstractController
         $repo = $this -> getDoctrine()->getRepository(Offer::class);
         $offer = $repo -> find($identifier);
 
+        
+
         return $this->render('offer/showoffer.html.twig', [
             'controller_name' => 'OfferController',
             'offer' => $offer

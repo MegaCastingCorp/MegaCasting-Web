@@ -31,5 +31,22 @@ class Apply
      */
     private $identifierusers;
 
+    public function getIdentifieroffer(): ?string
+    {
+        return $this->identifieroffer;
+    }
+
+    public function getIdentifierusers(): ?Users
+    {
+        return $this->identifierusers;
+    }
+
+    public function setIdentifierusers(?Users $identifierusers): self
+    {
+        $this->identifierusers = $identifierusers;
+
+        return $this;
+    }
+
 
 }

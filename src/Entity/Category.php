@@ -28,5 +28,22 @@ class Category
      */
     private $label;
 
+    public function getIdentifier(): ?string
+    {
+        return $this->identifier;
+    }
+
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    public function setLabel(?string $label): self
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
 
 }

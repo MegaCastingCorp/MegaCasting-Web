@@ -176,4 +176,41 @@ class Filtre extends \App\Entity\Filtre implements \Doctrine\ORM\Proxy\Proxy
     }
 
     
+    /**
+     * {@inheritDoc}
+     */
+    public function getIdentifier(): ?string
+    {
+        if ($this->__isInitialized__ === false) {
+            return  parent::getIdentifier();
+        }
+
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getIdentifier', []);
+
+        return parent::getIdentifier();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getLabel(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getLabel', []);
+
+        return parent::getLabel();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setLabel(?string $label): \App\Entity\Filtre
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setLabel', [$label]);
+
+        return parent::setLabel($label);
+    }
+
 }
