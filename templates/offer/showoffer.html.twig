@@ -28,17 +28,23 @@
 
         </div>
 
-        <div class="row mt-3">
+        <div class="row mt-3 ml-1">
             <p>Date de début:</p>
             <p class="ml-1">{{ offer.startcontractdate|date("d/m/Y") }}</p>
 
-            <p class="ml-5">Date de début:</p>
+            <p class="ml-5">Date de publication:</p>
             <p class="ml-1">{{ offer.publishdatetime|date("d/m/Y") }}</p>
         </div>
 
-        <h3>Information sur l'annonceur</h3>
+        <h3 class="mt-5">Information sur l'annonceur</h3>
 
-        
+        <div class="row mt-3 ml-1 mb-5">
+            <p>Nom de l'annonceur:</p>
+            <p class="ml-1">{{ producer[0].name }}</p>
+
+            <p class="ml-5">Adresse de contact:</p>
+            <p class="ml-1">{{ producer[0].url }}</p>
+        </div>        
 
         <a href="{{ path('showoffer', {identifier: offer.identifier}) }}" class="btn btn-postuler">Postuler</a>
 
